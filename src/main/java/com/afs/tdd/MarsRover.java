@@ -31,4 +31,10 @@ public class MarsRover {
             case 'E': direction = 'N'; break;
         }
     }
+    public void turnRight() {
+        switch (direction) {
+            case 'N': direction = 'E'; break;
+            default: break;
+        }
+    }
 }
