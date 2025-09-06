@@ -40,12 +40,12 @@ public class MarsRover {
         }
     }
 
-
     public void moveForward() {
         switch (direction) {
             case 'N': y++; break;
             case 'E': x++; break;
             case 'S': y--; break;
+            case 'W': x--; break;
         }
     }
 }
