@@ -23,4 +23,10 @@ public class MarsRoverTest {
         rover.turnLeft();
         assertEquals('W', rover.getDirection());
     }
+    @Test
+    public void testTurnLeftFromWest() {
+        MarsRover rover = new MarsRover(0, 0, 'W');
+        rover.turnLeft();
+        assertEquals('S', rover.getDirection());
+    }
 }

@@ -26,6 +26,7 @@ public class MarsRover {
     public void turnLeft() {
         switch (direction) {
             case 'N': direction = 'W'; break;
+            case 'W': direction = 'S'; break;
             default: break;
         }
     }
