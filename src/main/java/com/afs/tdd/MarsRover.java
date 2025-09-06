@@ -39,9 +39,11 @@ public class MarsRover {
             case 'W': direction = 'N'; break;
         }
     }
+
     public void moveForward() {
-        if (direction == 'N') {
-            y++;
+        switch (direction) {
+            case 'N': y++; break;
+            case 'E': x++; break;
         }
     }
 }

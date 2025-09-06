@@ -73,4 +73,12 @@ public class MarsRoverTest {
         assertEquals(1, rover.getY());
         assertEquals('N', rover.getDirection());
     }
+    @Test
+    public void testMoveForwardEast() {
+        MarsRover rover = new MarsRover(0, 0, 'E');
+        rover.moveForward();
+        assertEquals(1, rover.getX());
+        assertEquals(0, rover.getY());
+        assertEquals('E', rover.getDirection());
+    }
 }
