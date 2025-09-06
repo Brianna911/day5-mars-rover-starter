@@ -23,5 +23,10 @@ public class MarsRover {
     public int getX() { return x; }
     public int getY() { return y; }
     public char getDirection() { return direction; }
-    
+    public void turnLeft() {
+        switch (direction) {
+            case 'N': direction = 'W'; break;
+            default: break;
+        }
+    }
 }
